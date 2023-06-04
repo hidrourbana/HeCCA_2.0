@@ -1,0 +1,61 @@
+@font-face {
+	font-family: 'Ancizar Sans';
+	src: local('Ancizar Sans'), url('assets/AncizarSans/AncizarSans-Regular_02042016.otf') format('opentype');
+	font-style: normal;
+	font-weight: 400;
+}
+
+@font-face {
+	font-family: 'Ancizar Sans';
+	src: local('Ancizar Sans'), url('assets/AncizarSans/AncizarSans-Bold_02042016.otf') format('opentype');
+	font-style: normal;
+	font-weight: 700;
+}
+
+@font-face {
+	font-family: 'Ancizar Sans';
+	src: local('Ancizar Sans'), url('assets/AncizarSans/AncizarSans-Extrabold_02042016.otf') format('opentype');
+	font-style: normal;
+	font-weight: 800;
+}
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	margin: 0;
+	font-family:'Ancizar Sans', 'Roboto', sans-serif;
+	background-image: linear-gradient(180deg, #fff0 0%, #44b2e1 150%), url('images/bathymetry_001_navionics.png');
+	background-attachment: fixed;
+	background-size: cover;
+}
+
+.window {
+	background-color: #f0f8ff;
+	border: 1px solid #44b2e1;
+	position: fixed;
+	top: 200px;
+	left: 200px;
+	width: calc(100vw - 400px);
+	height: calc(100vh - 400px);
+}
+
+.closed {
+	display: none;
+}
+
+.invisible {
+	display: none;
+}
+
+
+.img-full {
+	width: 100%;
+}
+
+.disabled {
+	color: #5c5e5f
+}

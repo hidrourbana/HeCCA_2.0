@@ -1,6 +1,7 @@
 import React from 'react';
-import { Input } from './Input';
-import { PopUpText } from './PopUpText';
+import './styles.css'; 
+import { Input } from '../input/Input';
+// import { PopUpText } from './PopUpText';
 
 export class Main extends React.Component {
     constructor(props) {
@@ -28,7 +29,7 @@ export class Main extends React.Component {
                 <section>
                     <div className={this.state.outputClassList}>
                         <h2>Resultados</h2>
-                        <img class="img-full" src="http://localhost:3000/mock_graph.png"/>
+                        <img className="img-full" src="http://localhost:3000/mock_graph.png" alt="" />
                     </div>
                 </section>
             </main>
@@ -43,11 +44,11 @@ export class Main extends React.Component {
         const index = arrayAux.indexOf('closed');
         
         if( warn && msg ) {
-            if(index != -1){
+            if(index !== -1){
                 arrayAux.splice(index, 1);
             }
         } else {
-            if(index == -1){
+            if(index === -1){
                 arrayAux.push('closed');
             }
         }
@@ -62,11 +63,11 @@ export class Main extends React.Component {
         const index = arrayAux.indexOf('closed');
         
         if( error && msg ) {
-            if(index != -1){
+            if(index !== -1){
                 arrayAux.splice(index, 1);
             }
         } else { 
-            if(index == -1){
+            if(index === -1){
                 arrayAux.push('closed');
             }
         }
